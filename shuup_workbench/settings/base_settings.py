@@ -241,3 +241,8 @@ if os.environ.get("SHUUP_WORKBENCH_DISABLE_MIGRATIONS") == "1":
 
 def configure(setup):
     setup.commit(globals())
+
+# Update database configuration with $DATABASE_URL.
+import dj_database_url
+db_from_env = dj_database_url.config()
+DATABASES['default'].update(db_from_env)
