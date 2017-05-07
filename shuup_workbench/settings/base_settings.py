@@ -12,11 +12,12 @@ BASE_DIR = os.getenv("SHUUP_WORKBENCH_BASE_DIR") or (
     os.path.dirname(os.path.dirname(__file__)))
 SECRET_KEY = "Shhhhh"
 DEBUG = True
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 MEDIA_ROOT = os.path.join(BASE_DIR, "var", "media")
 STATIC_ROOT = os.path.join(BASE_DIR, "var", "static")
 MEDIA_URL = "/media/"
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 SHUUP_ENABLED_ADDONS_FILE = os.getenv("SHUUP_ENABLED_ADDONS_FILE") or (
     os.path.join(BASE_DIR, "var", "enabled_addons"))
