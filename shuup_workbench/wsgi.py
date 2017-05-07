@@ -17,4 +17,6 @@ import os
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "shuup_workbench.settings")  # noqa
 
 from django.core.wsgi import get_wsgi_application  # noqa (E402)
+from whitenoise.django import DjangoWhiteNoise
 application = get_wsgi_application()
+application = DjangoWhiteNoise(application)

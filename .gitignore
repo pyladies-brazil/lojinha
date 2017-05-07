@@ -10,6 +10,11 @@
 *.so
 *.spec
 *.sqlite3
+bin/
+local/
+share/
+include/
+pip-selfcheck.json
 .cache
 .coverage
 .idea
