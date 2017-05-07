@@ -5,6 +5,7 @@ coreapi==2.3.0
 coreschema==0.0.4
 cryptography==1.7.1
 decorator==4.0.11
+dj-database-url==0.4.2
 Django==1.9.13
 django-bootstrap3==6.2.2
 django-countries==3.4.1
@@ -25,6 +26,7 @@ easy-thumbnails==2.3
 et-xmlfile==1.0.1
 factory-boy==2.7.0
 fake-factory==0.5.3
+gunicorn==19.7.1
 idna==2.5
 ipdb==0.10.3
 ipython==6.0.0
@@ -56,7 +58,7 @@ pytoml==0.1.12
 pytz==2017.2
 requests==2.13.0
 SecretStorage==2.3.1
--e git+git@github.com:lucianoratamero/lojinha.git@d992a1740849ca49360d53cfc718b660f22ced25#egg=shuup
+-e git+git@github.com:lucianoratamero/lojinha.git@10cba884ae98353098bd203f8ce145969978ad7f#egg=shuup
 simplegeneric==0.8.1
 simplejson==3.10.0
 six==1.10.0
@@ -65,4 +67,5 @@ unicodecsv==0.14.1
 Unidecode==0.4.20
 uritemplate==3.0.0
 wcwidth==0.1.7
+whitenoise==3.3.0
 xlrd==1.0.0
