@@ -58,7 +58,7 @@ pytoml==0.1.12
 pytz==2017.2
 requests==2.13.0
 SecretStorage==2.3.1
--e git+git@github.com:lucianoratamero/lojinha.git@10cba884ae98353098bd203f8ce145969978ad7f#egg=shuup
+shuup==1.1.0
 simplegeneric==0.8.1
 simplejson==3.10.0
 six==1.10.0
